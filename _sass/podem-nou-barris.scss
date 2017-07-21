@@ -1,22 +1,30 @@
 $podemos-color: #54075b;
 
 .masthead {
-    background-color: $podemos-color;
+    background-color: white;
+
+    .masthead__inner-wrap {
+        border-bottom: 1px #54075b solid;
+    }
 
     #site-nav {
         background: none;
-        color: #fff;
+        color: $podemos-color;
 
         .site-title {
-            color: #fff;
+            color: $podemos-color;
         }
 
         .masthead__menu-item {
             a {
-                color: white;
+                color: $podemos-color;
             }
         }
     }
+}
+
+.page__title {
+    color: $podemos-color;
 }
 
 .agenda-events {
@@ -26,10 +34,9 @@ $podemos-color: #54075b;
         justify-content: center;
         align-items: stretch;
         border-bottom: 1px solid #ddd;
-        padding-bottom: 100px;
 
         a[style*="background-image"] {
-            height: 10vw;
+            height: 200px;
             background-size: cover;
         }
 
