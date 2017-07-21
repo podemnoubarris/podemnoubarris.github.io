@@ -1,0 +1,67 @@
+$podemos-color: #672f6c;
+
+.masthead {
+    background-color: $podemos-color;
+
+    #site-nav {
+        background: none;
+        color: #fff;
+
+        .site-title {
+            color: #fff;
+        }
+
+        .masthead__menu-item {
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+.agenda-events {
+    li {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: stretch;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 100px;
+
+        a[style*="background-image"] {
+            height: 10vw;
+            background-size: cover;
+        }
+
+        .agenda-event-info {
+            display: flex;
+            flex-flow: column;
+            align-items: stretch;
+            border: 1px solid #eee;
+            padding: 30px 30px;
+
+            time {
+                font-weight: bold;
+                text-align: right;
+                font-size: 0.8rem;
+                margin-top: 10px;
+            }
+
+            .agenda-event-description {
+                font-size: 0.9rem;
+                margin-top: 10px;
+            }
+        }
+
+        .agenda-event-link {
+            text-align: right;
+            padding: 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.agenda-event-image {
+    height: 35vw;
+}

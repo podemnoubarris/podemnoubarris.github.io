@@ -1,0 +1,9 @@
+---
+layout: single
+---
+
+{% if page.image %}
+<a href="/assets/img/agenda/{{ page.image }}" target="_blank"><img class="agenda-event-image" src="/assets/img/agenda/{{ page.image }}" alt="{{ title }}"></a>
+{% endif %}
+
+{{ content }}

@@ -1,0 +1,24 @@
+---
+title: Agenda
+permalink: /agenda/index
+author_profile: false
+---
+
+<ol class="agenda-events">
+{% for event in site.agenda %} 
+    <li>
+        <h2><a href="{{ event.url }}" target="_self">{{ event.title }}</a></h2>
+
+        {% if event.image %}
+        <a href="{{ event.url }}" style="background-image: url(/assets/img/agenda/{{ event.image }})"></a>
+        {% endif %}
+
+        <div class="agenda-event-info">
+            <time>{{ event.date }}</time>
+            <div class="agenda-event-description">{{ event.summary }}</div>
+        </div>
+
+        <a class="agenda-event-link" href="{{ event.url }}" target="_self">Vull més info!</a>
+    </li>
+{% endfor %}
+</ol>
