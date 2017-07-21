@@ -1,4 +1,4 @@
-$podemos-color: #672f6c;
+$podemos-color: #54075b;
 
 .masthead {
     background-color: $podemos-color;
@@ -62,6 +62,32 @@ $podemos-color: #672f6c;
     }
 }
 
-.agenda-event-image {
-    height: 35vw;
+.agenda-event-image-container {
+    .agenda-event-image {
+        height: 35vw;
+    }
+
+    .agenda-event-image-link {
+        overflow: hidden;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-size: cover;
+
+        .fa-expand {
+            padding: 30px;
+            margin: 15px;
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 100px;
+            color: black;
+            box-shadow: 6px 4px 5px #444;
+        }
+    }
+}
+
+.agenda-event-content {
+    padding: 30px 40px;
+    font-size: 0.9rem;
+    font-weight: normal;
 }

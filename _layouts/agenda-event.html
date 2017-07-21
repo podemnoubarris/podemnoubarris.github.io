@@ -3,7 +3,13 @@ layout: single
 ---
 
 {% if page.image %}
-<a href="/assets/img/agenda/{{ page.image }}" target="_blank"><img class="agenda-event-image" src="/assets/img/agenda/{{ page.image }}" alt="{{ title }}"></a>
+<div class="agenda-event-image-container"> 
+    <a class="agenda-event-image-link" href="/assets/img/agenda/{{ page.image }}" style="background-image: url(/assets/img/agenda/{{ page.image }})" target="_blank">
+        <span class="fa fa-expand"></span>
+    </a>
+</div>
 {% endif %}
 
+<div class="agenda-event-content">
 {{ content }}
+</div>
