@@ -101,3 +101,165 @@ $podemos-color: #54075b;
     font-size: 0.9rem;
     font-weight: normal;
 }
+
+#transparencyCategories {
+    display: flex;
+    flex-flow: column;
+
+    .transparency-category {
+        border-width: 6px;
+        border-style: solid;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        color: initial;
+
+        &:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        i.fa {
+            font-size: 3rem;
+        }
+
+        span {
+            font-size: 1.2rem;
+        }
+    }
+
+    #assemblyMinutes {
+        border-color: #0fb0b9;
+
+        i.fa {
+            color: #0eb0b9;
+        }
+    }
+
+    #docs {
+        border-color: #54075b;
+
+        i.fa {
+            color: #54075b;
+        }
+    }
+}
+
+.transparency-assemblies-minutes {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 50px;
+
+    li {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        flex: 1;
+        border-bottom: 1px solid $podemos-color;
+        padding-bottom: 20px;
+        margin: 0;
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: initial;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        time {
+            font-size: 0.8rem;
+        }
+
+        a {
+            .fa {
+                color: #bf1111;
+                margin-right: 15px;
+            }
+
+            span {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.transparency-docs {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 50px;
+
+    li {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        flex: 1;
+        border-bottom: 1px solid $podemos-color;
+        padding-bottom: 20px;
+        margin: 0;
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: initial;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        a {
+            .fa {
+                color: #bf1111;
+                margin-right: 15px;
+            }
+
+            span {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.back-to-transparency{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+
+    .fa {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+}
+
+.goog-te-banner-frame {
+    display: none;
+}
+

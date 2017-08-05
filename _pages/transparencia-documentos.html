@@ -1,0 +1,18 @@
+---
+title: "Transparència: Documents organitzatius"
+permalink: /transparencia/documents-organitzatius
+author_profile: false
+---
+
+<a href="/transparencia" class="back-to-transparency"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i><span>Torna a l'índex de <em>transparència</em></a>
+
+<p>A continuació posem a la teva disposició els nostres documents organitzatius.</p>
+
+<ol class="transparency-docs">
+{% for doc in site.data.transparencia.documentos %} 
+    <li>
+        <h2>{{ doc.title }}</h2>
+        <a href="{{ doc.file }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Descarregar</a>
+    </li>
+{% endfor %}
+</ol>

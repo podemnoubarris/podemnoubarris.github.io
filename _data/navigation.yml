@@ -2,6 +2,10 @@
 main:
   - title: "Agenda"
     url: /agenda/
+  - title: "Transparencia"
+    url: "/transparencia"
+  - title: "Qui som"
+    url: "/qui-som"
   
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

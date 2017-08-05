@@ -252,3 +252,5 @@ collections:
       layout: agenda-event
       output: true
       permalink: /:collection/:name
+   transparency:
+      output: false
