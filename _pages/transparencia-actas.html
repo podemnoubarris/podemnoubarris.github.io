@@ -1,6 +1,6 @@
 ---
 title: "Transparència: Actes d'assemblees"
-permalink: /transparencia/assemblees/actes
+permalink: /transparencia/actes/assemblees/index
 author_profile: false
 ---
 
@@ -12,9 +12,8 @@ author_profile: false
 <ol class="transparency-assemblies-minutes">
 {% for minute in site.data.transparencia["actas-asambleas"] %} 
     <li>
-        <h2>{{ minute.title }}</h2>
-        <time>{{ minute.date }}</time>
-        <a href="{{ minute.file }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Descarregar</a>
+        <time>{{ minute.date | date:"%d/%m/%Y" }}</time>
+        <a href="{{ minute.url }}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Descarregar</a>
     </li>
 {% endfor %}
 </ol>
