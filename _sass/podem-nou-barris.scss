@@ -111,7 +111,7 @@ $podemos-color: #54075b;
         border-style: solid;
         padding: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-bottom: 25px;
         color: initial;
@@ -123,10 +123,12 @@ $podemos-color: #54075b;
 
         i.fa {
             font-size: 3rem;
+            margin-right: 20px;
         }
 
         span {
             font-size: 1.2rem;
+            text-align: center;
         }
     }
 
@@ -147,7 +149,7 @@ $podemos-color: #54075b;
     }
 }
 
-.transparency-assemblies-year-list {
+#transparency-assemblies-year-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -173,6 +175,11 @@ $podemos-color: #54075b;
     h3 {
         font-size: 1.5rem;
         margin: 0;
+        margin-top: 100px;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     article {
