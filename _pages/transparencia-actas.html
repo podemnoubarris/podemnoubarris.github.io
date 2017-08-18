@@ -7,10 +7,8 @@ author_profile: false
 <a href="/transparencia" class="back-to-transparency"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i><span>Torna a l'índex de <em>transparència</em></a>
 
 <p>Llistat de les nostres actes en ordre de més recents a més antigues.</p>
-<p>Si prems al títol de l'assemblea podràs revisar el cartell i informació de la convocatòria de la mateixa.</p>
+<p>Prem sobre un any per anar directament al llistat d'assemblees del mateix.</p>
 
-
-<h2>Accés directe al llistat per anys:</h2>
 <ol id="transparency-assemblies-year-list">
 {% for minute in site.data.transparencia["actas-asambleas"] %} 
 {% assign currentYear = minute.date | date:"%Y" %}

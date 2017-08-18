@@ -1,10 +1,38 @@
 $podemos-color: #54075b;
 
+body {
+    margin-bottom: initial !important;
+}
+
+.page__footer {
+    position: initial;
+}
+
+.greedy-nav button {
+    background-color: initial;
+
+    .navicon {
+        background-color: $podemos-color;
+
+        &:before, &:after {
+            background: $podemos-color;
+        }
+    }
+
+    &.close {
+        .navicon {
+            background-color: initial;
+        }
+    }
+}
+
+
+
 .masthead {
     background-color: white;
+    border-bottom: 1px $podemos-color solid;
 
     .masthead__inner-wrap {
-        border-bottom: 1px #54075b solid;
     }
 
     #site-nav {
@@ -153,6 +181,8 @@ $podemos-color: #54075b;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 
     a {
         padding: 0 20px;

@@ -2,7 +2,7 @@
 main:
   - title: "Agenda"
     url: /agenda/
-  - title: "Transparencia"
+  - title: "Transparència"
     url: "/transparencia"
   - title: "Qui som"
     url: "/qui-som"
