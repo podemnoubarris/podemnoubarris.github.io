@@ -9,11 +9,30 @@ author_profile: false
 <p>Llistat de les nostres actes en ordre de més recents a més antigues.</p>
 <p>Si prems al títol de l'assemblea podràs revisar el cartell i informació de la convocatòria de la mateixa.</p>
 
-<ol class="transparency-assemblies-minutes">
+
+<h2>Accés directe al llistat per anys:</h2>
+<ol id="transparency-assemblies-year-list">
 {% for minute in site.data.transparencia["actas-asambleas"] %} 
-    <li>
-        <time>{{ minute.date | date:"%d/%m/%Y" }}</time>
-        <a href="{{ minute.url }}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Descarregar</a>
-    </li>
+{% assign currentYear = minute.date | date:"%Y" %}
+{% if lastYear == empty or currentYear != lastYear %}
+<a href="#transparency-minutes-year-{{currentYear}}">{{currentYear}}</a>
+{% assign lastYear = currentYear %}
+{% endif %}
 {% endfor %}
 </ol>
+<section class="transparency-assemblies-minutes">
+{% assign lastYear = "" %}
+
+{% for minute in site.data.transparencia["actas-asambleas"] %} 
+{% assign currentYear = minute.date | date:"%Y" %}
+
+{% if lastYear == empty or currentYear != lastYear %}
+<h3 id="transparency-minutes-year-{{currentYear}}">{{ currentYear }}</h3>
+{% assign lastYear = currentYear %}
+{% endif %}
+    <article>
+        <time>{{ minute.date | date:"%d/%m/%Y" }}</time>
+        <a href="{{ currentYear }}/{{ minute.url }}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span>Descarregar</a>
+    </article>
+{% endfor %}
+</section>

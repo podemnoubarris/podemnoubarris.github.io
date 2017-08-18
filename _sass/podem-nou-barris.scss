@@ -147,6 +147,21 @@ $podemos-color: #54075b;
     }
 }
 
+.transparency-assemblies-year-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    a {
+        padding: 0 20px;
+        border-right: 1px solid $podemos-color;
+
+        &:last-child {
+            border: initial !important;
+        }
+    }
+}
+
 .transparency-assemblies-minutes {
     padding: 0;
     margin: 0;
@@ -155,7 +170,12 @@ $podemos-color: #54075b;
     justify-content: center;
     margin-top: 50px;
 
-    li {
+    h3 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    article {
         list-style-type: none;
         display: flex;
         justify-content: center;
