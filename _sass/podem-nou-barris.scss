@@ -4,6 +4,22 @@ body {
     margin-bottom: initial !important;
 }
 
+#main {
+    margin-top: initial;
+}
+
+.page {
+    header {
+        border-bottom: 2px solid #54075b;
+        margin-bottom: 20px;
+        padding: 40px 20px 20px;
+
+        .page__title {
+            font-weight: lighter;
+        }
+    }
+}
+
 .page__footer {
     position: initial;
 }
@@ -33,6 +49,7 @@ body {
     border-bottom: 1px $podemos-color solid;
 
     .masthead__inner-wrap {
+        padding: 0 10px;
     }
 
     #site-nav {
@@ -46,6 +63,7 @@ body {
         .masthead__menu-item {
             a {
                 color: $podemos-color;
+                font-weight: lighter;
             }
         }
     }
