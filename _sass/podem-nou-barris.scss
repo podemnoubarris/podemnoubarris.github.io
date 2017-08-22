@@ -2,6 +2,9 @@ $podemos-color: #54075b;
 
 body {
     margin-bottom: initial !important;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 #main {
@@ -9,6 +12,10 @@ body {
 }
 
 .page {
+    min-width: 50vw;
+    padding-left: initial;
+    padding-right: initial;
+    
     header {
         border-bottom: 2px solid #54075b;
         margin-bottom: 20px;
@@ -22,6 +29,8 @@ body {
 
 .page__footer {
     position: initial;
+    background-color: $podemos-color;
+    color: white !important;
 }
 
 .greedy-nav button {
